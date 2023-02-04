@@ -1,11 +1,8 @@
 //alert("Teo is the next milionare!")
 
 
-//{mode: 'no-cors'}
-fetch('https://www.geoplugin.net/json.gp').then((response) => {
-return response.json()
-    
-  }).then(data => {
-    console.log(data)
-document.getElementById('ip').innerText = data.geoplugin_request
-  })
+//{mode: 'no-cors'}function geoplugin_request() { return '87.116.181.187'; }
+
+
+console.log(geoplugin_request())
+document.getElementById('ip').innerText = geoplugin_request()
